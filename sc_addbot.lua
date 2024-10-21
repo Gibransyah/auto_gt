@@ -2,12 +2,9 @@ UseToken = false
 LoginType = Platform.windows
 
 BotList = [[
-agafez6792@gmail.com:@inupe0386
-ikakoy7637@gmail.com:@aseci3075
-ofekow4046@gmail.com:@axeci6659
-uzekeb4979@gmail.com:@ufiyu1970
-emuxox3163@gmail.com:@ohuwo3065
-atokoh5378@gmail.com:@agatu8577
+adasatu140@gmail.com:adaenamini
+darrylpittman6227@gmail.com:fyq2ebRxV7gs:vx5q4p@f3ts5.shop
+
 ]]
 
 -- Dont Touch!
@@ -41,16 +38,14 @@ end
 for _, information in ipairs(bots) do
     addBot(information)
     sleep(100)
-    botr = getBot(indexBot)
     if UseToken then
+        botr = getBot(indexBot)
         botr:updateTokenBot(tokens[indexBot])
         sleep(100)
         botr:connect()
         sleep(10000)
         indexBot = indexBot + 1
     else
-        botr:connect()
-        sleep(25000)
+        sleep(10000)
     end
-    indexBot = indexBot + 1
 end
